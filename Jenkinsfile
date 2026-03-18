@@ -1,11 +1,6 @@
 pipeline {
 	agent any
 	stages {
-		stage('github clone') {
-			steps {
-				git branch: 'main', url: 'https://github.com/June21621/executeshell.git'
-			}
-		}
 		stage('Compile') {
 			steps {
 				echo "Compiled successfully!";
